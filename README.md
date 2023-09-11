@@ -146,4 +146,8 @@ GitHub is the free web based platform we and many other software engineers use t
 
 ## Sync and pull the changes
 I will be updating my upstream version of your repo before SI sessions to add new content. In order to get the new content into your repo you must sync and pull the changes
-1. Every time you want to work on your repo I recommend heading to your repo and syncing the changes. 
+1. Every time you want to work on your repo I recommend heading to your repo and syncing the changes
+   1. Go to your forked repo on github and look for a button near the top of the center of the page called 🔄 `Sync fork`
+   2. If there are changes upstream to merge 
+2. Go to your terminal and navigate to your fork
+3. Enter the command `git pull` to pull the changes on GitHub onto your device
