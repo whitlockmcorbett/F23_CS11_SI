@@ -182,7 +182,7 @@ Once you make some changes you would like to be documented you need to `commit` 
      ```sh
      git commit -m "Added endl to move to the next line" hello.cpp
      ```
-2. You will recieve a short message sumarizing the changes
+2. You will receive a short message summarizing the changes
 
 <br>
 
