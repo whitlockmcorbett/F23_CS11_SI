@@ -1,12 +1,54 @@
-# Weekly directories
-Here is where you can find quick links to each weekly directory.
+<h1 align="center">F23_CS11_SI</h1>
+<h3 align="center">Fall 2023 CS-11 Supplemental Instruction</h3>
+
+<br>
+  <p align="center">
+    GitHub Repo
+    <br/>
+    <a href="https://github.com/steph1111/F23_CS11_SI"><strong>F23_CS11_SI »</strong></a>
+    <br/><br/>
+    <a href="https://discord.gg/EXZMtyWd3f">Discord</a>
+    ·
+    <a href="https://cabrillo.instructure.com/enroll/HPCCDY">Canvas</a>
+    ·
+    <a href="https://replit.com/teams/join/ebncukmleqfedfzbdabounplgiwanfno-F23CS11SI">Replit</a>
+  </p>
+<br>
 
 <details>
-  <summary>Table of contents</summary>
-  <ol>
-    <li><a href="#exercise-hello-world">Week 1</a>
-  </ol>
+<summary>Table of contents</summary>
+    <ul>
+        <li><a href="#weekly-directories">Weekly directories</a>
+        <li><a href="#getting-started">Getting started</a>
+            <ul>
+                <li><a href="#0%EF%B8%8F⃣-installing-git-cygwin"> Installing git (Cygwin)</a>
+                <li><a href="#0%EF%B8%8F⃣-installing-git-mac-and-linux"> Installing git (Mac and Linux)</a>
+                <li><a href="#1%EF%B8%8F⃣-create-a-github-account"> Create a GitHub account</a>
+                <li><a href="#2%EF%B8%8F⃣-set-up-ssh-cygwin"> Set up SSH (Cygwin)</a>
+                <li><a href="#2%EF%B8%8F⃣-set-up-ssh-mac-and-linux"> Set up SSH (Mac and Linux)</a>
+                <li><a href="#3%EF%B8%8F⃣-generate-an-ssh-key"> Generate an SSH key</a>
+                <li><a href="#4%EF%B8%8F⃣-add-the-ssh-key-to-github"> Add the SSH key to GitHub</a>
+                <li><a href="#5%EF%B8%8F⃣-fork-the-repo-to-your-account"> Fork the repo to your account</a>
+                <li><a href="#6%EF%B8%8F⃣-clone-your-forked-repo-to-your-system"> Clone your forked repo to your system</a>
+            </ul>
+        <li><a href="#maintaining-your-repo">Maintaining your repo</a>
+            <ul>
+                <li><a href="#0%EF%B8%8F⃣-sync-and-pull-the-changes">Sync and pull the changes</a>
+                <li><a href="#1%EF%B8%8F⃣-commit-your-changes">Commit your changes</a>
+                <li><a href="#2%EF%B8%8F⃣-push-your-changes">Push your changes</a>
+            </ul>
+    </ul>
 </details>
+
+<br>
+
+# Weekly directories
+Quick links to each weekly directory:
+- [Week 2](https://github.com/steph1111/F23_CS11_SI/tree/main/week_2)
+- [Week 3](https://github.com/steph1111/F23_CS11_SI/tree/main/week_3)
+  
+Each week we will have a new directory of practice programs
+
 <br> 
 
 # Getting started
@@ -109,9 +151,7 @@ GitHub is the free web based platform we and many other software engineers use t
 2. Paste the key from step 2 into the `Key` box
 3. Save the key by clicking <img width="80" alt="Add SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/cb49a8b5-7d60-4498-9595-57634f3f6bba">
 
-
 <br>
-
 
 ## 5️⃣ Fork the repo to your account
 1. Open the `F23_CS11_SI` GitHub repo in your browser: https://github.com/steph1111/F23_CS11_SI
@@ -142,9 +182,7 @@ GitHub is the free web based platform we and many other software engineers use t
     ```
 4. To confirm the clone was successful list your files with `ls`. You should see the name of the cloned repo in your current directory
 
-
 <br>
-
 
 # Maintaining your repo
 
@@ -164,6 +202,8 @@ I will be updating my upstream version of your repo before SI sessions to add ne
    git pull
    ```
 6.  Work on the exercises as you would any code on your device
+
+<br>
 
 ## 1️⃣ Commit your changes
 Once you make some changes you would like to be documented you need to `commit` them. Committing changes is how you can mark versions of your code you would like to be tracked. It is a good idea to commit changes before and after you add/remove a feature that way there is a record of your changes. Also commit changes after you have finished a session of programming then `push` (see following section)
