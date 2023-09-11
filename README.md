@@ -1,5 +1,5 @@
 ## Getting started
-### Installing git on Windows (Cygwin)
+### Installing git (Cygwin)
 If you are on Windows, you have probably already installed Cygwin on your device. When you were installing, Cygwin gave you the option to install additional packages, one of these was for Git. Chances are you did not install this, but that is okay we can add packages after installation (kinda). There is no package management in Cygwin outside of the setup program, so you will have to run setup-x86_64.exe again. 
 1. Open `File Explore` then to `Downloads` on your device
 2. Search for `setup-x86_64.exe` and open the file
@@ -15,7 +15,7 @@ If you are on Windows, you have probably already installed Cygwin on your device
 
 <br>
 
-### Installing git on Mac and Linux
+### Installing git (Mac and Linux)
 1. By default, git should be installed on Mac and Linux systems
 2. Confirm git is installed by running the following command in your terminal
     ```sh
@@ -46,11 +46,51 @@ GitHub is the free web based platform we and many other software engineers use t
     git config --global user.name stlheure@cabrillo.edu
     ```
 
+<br>
+
+### Set up SSH (Cygwin)
+1. In Cygwin enter the folling command to configure ssh in 
+    ```sh
+    ssh-host-config
+    ```
+2. Enter yes for the prompts 
+3. You will be prompted to with the text below
+    <div><pre style="margin: 0; line-height: 125%"><span style="color: #DA70D6">***Query:</span><span style="color: white"> Enter the value CYGWIN for the daemon: []</span></div>
+
+    For the value enter `ntsec`
+    <div><pre style="margin: 0; line-height: 125%"><span style="color: #DA70D6">***Query:</span><span style="color: white"> Enter the value CYGWIN for the daemon: [] ntsec</span></div>
+    <br>
+
+<br>
+
+### Generate an SSH key
+
+1. Confirm you have an `.ssh` directory on your system by running the command
+   ```
+   ls ~/.ssh
+   ```
+   This should return a list of files
+2. Generate an ssh key to connect your system to your GitHub account
+    ```sh
+    ssh-keygen
+    ```
+3. Copy the generated ssh key
+    ```
+    cat ~/.ssh/id_rsa.pub
+    ```
+4. Add the SSH key to GitHub
+   1. Log into Github and open your settings
+   2. Scroll to `🔑 SSH and GPG keys`
+   3. Click the `New SSH` key button located in the top right corner.
+   4. Choose a name for the key (something like Mac/Cygwin/Linux so you remember what it was for)
+   5. Paste the key from step 2 into the `Key` box
+   6. Save the key by clicking Add `SSH key`
+
+<br>
+
+### Fork this repo to your system
 
 
-Go through the setup process again. When you get to Select Packages search for Git
-Select the one named “git” with description “Distributed version control system”
-Finish the setup and confirm git is installed with git --version
 
 
 
