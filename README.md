@@ -144,10 +144,42 @@ GitHub is the free web based platform we and many other software engineers use t
 
 # Maintaining your repo
 
-## Sync and pull the changes
-I will be updating my upstream version of your repo before SI sessions to add new content. In order to get the new content into your repo you must sync and pull the changes
-1. Every time you want to work on your repo I recommend heading to your repo and syncing the changes
-   1. Go to your forked repo on github and look for a button near the top of the center of the page called 🔄 `Sync fork`
-   2. If there are changes upstream to merge 
-2. Go to your terminal and navigate to your fork
-3. Enter the command `git pull` to pull the changes on GitHub onto your device
+## 0️⃣ Sync and pull the changes
+I will be updating my upstream version of your repo before SI sessions to add new content. In order to get the new content into your forked repo you must sync and pull the changes. *Every time* you want to work on your repo I recommend heading to your forked repo and seeing if there are upstream changes to be synced and pulled
+1. Open your forked repo in GitHub. If there are no changes you should see a message that looks like the following stating this branch is up to date. If this is the case it means I have not made changes and you can ignore the following steps.
+
+2. If there are upstream changes to merge there should be a message on this page similar to the following:
+
+   This means I have main changes to the upstream repo that need to be synced to your fork
+3. Click on the button titled 🔄 `Sync fork`, you should see a window stating the code is out of date. Click the {}
+4. Next navigate to your fork on your system 
+5. Enter the command `git pull` to pull the changes on GitHub onto your device
+   ```sh
+   git pull
+   ```
+6.  Work on the exercises as you would any code on your device
+
+## 1️⃣ Commit your changes
+Once you make some changes you would like to be documented you need to `commit` them. Committing changes is how you can mark versions of your code you would like to be tracked. It is a good idea to commit changes before and after you add/remove a feature that way there is a record of your changes. Also commit changes after you have finished a session of programming then `push` (see following section)
+1. To commit changes you use the `git commit` command. The parts of the command are as follows:
+     - `git`: Denotes we are using a git command 
+     - `commit`: The name of the command is commit, this is what we would like to do
+     - `-m`: This is a flag that says we would like to add a commit message
+     - `"Message here`: Between quotes state what changes you are committing 
+     - `file_name`: Replace this with the file you wish to commit
+     All together the git commit command syntax looks like this:
+     ```sh
+     git commit -m "Message here" file_name
+     ```
+     An example commit may be
+     ```sh
+     git commit -m "Added endl to move to the next line" hello.cpp
+     ```
+
+<br>
+
+## 2️⃣ Push your changes
+Once you have finished a coding session it is a good idea to `push` your commits. The `push` command is basically the opposite of `pull`. `push` takes the changes (commits) you made on your local system and sends them to GitHub. <span style="color:red"> **IMPORTANT always push before you pull!**</span> 
+1. Commit your changes (see above)
+2. Enter the command `git pull` to push the changes from your system to GitHub
+3. You can confirm this worked by heading to Github and seeing the changes reflected on your repo page
