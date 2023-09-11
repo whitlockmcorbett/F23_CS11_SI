@@ -62,7 +62,7 @@ GitHub is the free web based platform we and many other software engineers use t
 <br>
 
 ## 2️⃣ Set up SSH (Cygwin)
-1. Open Cygwin as Administrator and enter the following command to configure ssh
+1. Open Cygwin as Administrator and enter the following command to configure SSH
     ```sh
     ssh-host-config
     ```
@@ -76,23 +76,23 @@ GitHub is the free web based platform we and many other software engineers use t
 <br>
 
 ## 2️⃣ Set up SSH (Mac and Linux)
-1. ssh should already be on Mac and Linux systems
+1. SSH should already be on Mac and Linux systems
 
 <br>
 
 ## 3️⃣ Generate an SSH key
 
 1. Confirm you have an `.ssh` directory on your system by running the command
-   ```
+   ```sh
    ls ~/.ssh
    ```
    This should return a list of files
-2. Generate an ssh key to connect your system to your GitHub account
+2. Generate an SSH key to connect your system to your GitHub account
     ```sh
     ssh-keygen
     ```
 3. Copy the generated ssh key
-    ```
+    ```sh
     cat ~/.ssh/id_rsa.pub
     ```
 
@@ -101,17 +101,22 @@ GitHub is the free web based platform we and many other software engineers use t
 ## 4️⃣ Add the SSH key to GitHub
 1. Return to GitHub and open your settings by clicking on your icon then ⚙️ `settings`
 2. Scroll to  🔑 `SSH and GPG keys`
-3. Click the `New SSH` key button located in the top right corner.
-4. Choose a name for the key (something such that you'll remember what computer/system it was for)
-5. Paste the key from step 2 into the `Key` box
-6. Save the key by clicking Add `SSH key`
+
+   <img width="300" alt="Tabs" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/43005ec1-80b4-4a11-8659-41eff2ee83b7">
+
+4. Click the <img width="80" alt="New SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/7529cd77-805d-4df4-a24d-e10786648852">
+ key button located in the top right corner.
+5. Choose a name for the key (something such that you'll remember what computer/system it was for)
+6. Paste the key from step 2 into the `Key` box
+7. Save the key by clicking <img width="80" alt="Add SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/cb49a8b5-7d60-4498-9595-57634f3f6bba">
+
 
 <br>
 
 
 ## 5️⃣ Fork the repo to your account
 1. Open the `F23_CS11_SI` GitHub repo in your browser: https://github.com/steph1111/F23_CS11_SI
-2. At the top of the page click on `Fork` and follow the steps to fork the repo to your account by creating a new fork. This creates your own personal version of this repository
+2. At the top of the page click on <img width="80" alt="fork" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/007c608d-9d06-4db9-bee0-eaae1cd0343d"> and follow the steps to fork the repo to your account by creating a new fork. This creates your own personal version of this repository
 
     <img width="582" alt="fork" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/80964a3a-e63b-4433-a070-0b69f7c4e747">
 
@@ -119,17 +124,18 @@ GitHub is the free web based platform we and many other software engineers use t
 <br>
 
 ## 6️⃣ Clone your forked repo to your system
-1. Open your forked repo. At the top of the page click the green <img width="60" alt="Screen Shot 2023-09-10 at 6 50 33 PM" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/4239b698-fb5e-45c2-bfb7-1014c2fffd42"> button. Open the SSH tab and copy the link
+1. Open your forked repo. At the top of the page click the green <img width="70" alt="code" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/e6ab5cd8-2adf-44bd-8dab-865fefea6429">
+ button. Open the SSH tab and copy the link
 
       <img width="364" alt="Screen Shot 2023-09-10 at 6 50 51 PM" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/477b25d6-1944-47e7-a0ea-507461b5d0cb">
 
 2. Return to your terminal and navigate using `cd` to where you would like this repo contents to live with your file system
 3. To clone your repo use the `git clone` command and paste the link from step 1. This points to the existing repo on GitHub and makes a connected copy, or clone, on your system
-    ```ssh
+    ```sh
     git clone <link_here>
     ```
     Here is an example of how I would clone my repo (your link is different)
-    ```ssh
+    ```sh
     git clone git@github.com:steph1111/F23_CS11_SI.git
     ```
 4. To confirm the clone was successful list your files with `ls`. You should see the name of the cloned repo in your current directory
