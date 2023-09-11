@@ -104,11 +104,10 @@ GitHub is the free web based platform we and many other software engineers use t
 
    <img width="300" alt="Tabs" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/43005ec1-80b4-4a11-8659-41eff2ee83b7">
 
-4. Click the <img width="80" alt="New SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/7529cd77-805d-4df4-a24d-e10786648852">
- key button located in the top right corner.
-5. Choose a name for the key (something such that you'll remember what computer/system it was for)
-6. Paste the key from step 2 into the `Key` box
-7. Save the key by clicking <img width="80" alt="Add SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/cb49a8b5-7d60-4498-9595-57634f3f6bba">
+4. Click the <img width="80" alt="New SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/7529cd77-805d-4df4-a24d-e10786648852"> button located in the top right corner.
+1. Choose a name for the key (something such that you'll remember what computer/system it was for)
+2. Paste the key from step 2 into the `Key` box
+3. Save the key by clicking <img width="80" alt="Add SSH Key" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/cb49a8b5-7d60-4498-9595-57634f3f6bba">
 
 
 <br>
@@ -145,3 +144,6 @@ GitHub is the free web based platform we and many other software engineers use t
 
 # Maintaining your repo
 
+## Sync and pull the changes
+I will be updating my upstream version of your repo before SI sessions to add new content. In order to get the new content into your repo you must sync and pull the changes
+1. Every time you want to work on your repo I recommend heading to your repo and syncing the changes. 
