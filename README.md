@@ -1,5 +1,16 @@
-## Getting started
-### Installing git (Cygwin)
+# Weekly directories
+Here is where you can find quick links to each weekly directory.
+
+<details>
+  <summary>Table of contents</summary>
+  <ol>
+    <li><a href="#exercise-hello-world">Week 1</a>
+  </ol>
+</details>
+<br> 
+
+# Getting started
+## 0️⃣ Installing git (Cygwin)
 If you are on Windows, you have probably already installed Cygwin on your device. When you were installing, Cygwin gave you the option to install additional packages, one of these was for Git. Chances are you did not install this, but that is okay we can add packages after installation (kinda). There is no package management in Cygwin outside of the setup program, so you will have to run setup-x86_64.exe again. 
 1. Open `File Explore` then to `Downloads` on your device
 2. Search for `setup-x86_64.exe` and open the file
@@ -15,7 +26,7 @@ If you are on Windows, you have probably already installed Cygwin on your device
 
 <br>
 
-### Installing git (Mac and Linux)
+## 0️⃣ Installing git (Mac and Linux)
 1. By default, git should be installed on Mac and Linux systems
 2. Confirm git is installed by running the following command in your terminal
     ```sh
@@ -26,7 +37,7 @@ If you are on Windows, you have probably already installed Cygwin on your device
 
 <br>
 
-### Create a GitHub account
+## 1️⃣ Create a GitHub account
 GitHub is the free web based platform we and many other software engineers use to share and collaborate on projects as well as control version history.
 
 1. Go to [GitHub](https://github.com/) and follow the steps to create an account
@@ -48,8 +59,8 @@ GitHub is the free web based platform we and many other software engineers use t
 
 <br>
 
-### Set up SSH (Cygwin)
-1. In Cygwin enter the folling command to configure ssh in 
+## 2️⃣ Set up SSH (Cygwin)
+1. Open Cygwin as Administrator and enter the following command to configure ssh
     ```sh
     ssh-host-config
     ```
@@ -59,11 +70,15 @@ GitHub is the free web based platform we and many other software engineers use t
 
     For the value enter `ntsec`
     <div><pre style="margin: 0; line-height: 125%"><span style="color: #DA70D6">***Query:</span><span style="color: white"> Enter the value CYGWIN for the daemon: [] ntsec</span></div>
-    <br>
 
 <br>
 
-### Generate an SSH key
+## 2️⃣ Set up SSH (Mac and Linux)
+1. ssh should already be on Mac and Linux systems
+
+<br>
+
+## 3️⃣ Generate an SSH key
 
 1. Confirm you have an `.ssh` directory on your system by running the command
    ```
@@ -82,30 +97,34 @@ GitHub is the free web based platform we and many other software engineers use t
    1. Log into Github and open your settings
    2. Scroll to `🔑 SSH and GPG keys`
    3. Click the `New SSH` key button located in the top right corner.
-   4. Choose a name for the key (something like Mac/Cygwin/Linux so you remember what it was for)
+   4. Choose a name for the key (something such that you'll remember what computer/system it was for)
    5. Paste the key from step 2 into the `Key` box
    6. Save the key by clicking Add `SSH key`
 
 <br>
 
-### Fork this repo to your system
 
-
-
-
+## 4️⃣ Fork the repo to your account
+1. Open the `F23_CS11_SI` GitHub repo in your browser: https://github.com/steph1111/F23_CS11_SI
+2. At the top of the page click on `Fork` and follow the steps to fork the repo to your account. This creates your own personal version of this repository
 
 <br>
 
----
-## Weekly directories
----
-Here is where you can find quick links to each weekly directory.
+## 5️⃣ Clone your forked repo to your system
+1. Open your forked repo. At the top of the page click the green `<>Code` button. Open the SSH tab and copy the link
+2. Return to your terminal and navigate using `cd` to where you would like this repo contents to live with your file system
+3. To clone your repo use the `git clone` command and paste the link from step 1. This points to the existing repo on GitHub and makes a connected copy, or clone, on your system
+    ```ssh
+    git clone <link_here>
+    ```
+    Here is an example of how I would clone my repo (your link is different)
+    ```ssh
+    git clone git@github.com:steph1111/F23_CS11_SI.git
+    ```
+4. To confirm the clone was successful list your files with `ls`. You should see the name of the cloned repo in your current directory
 
-<details>
-  <summary>Table of contents</summary>
-  <ol>
-    <li><a href="#exercise-hello-world">Week 1</a>
-  </ol>
-</details>
-<br> 
+<br>
+
+
+# Maintaining your repo
 
