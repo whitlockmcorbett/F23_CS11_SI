@@ -115,10 +115,13 @@ GitHub is the free web based platform we and many other software engineers use t
 
 ## 5️⃣ Fork the repo to your account
 1. Open the `F23_CS11_SI` GitHub repo in your browser: https://github.com/steph1111/F23_CS11_SI
-2. At the top of the page click on <img width="80" alt="fork" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/007c608d-9d06-4db9-bee0-eaae1cd0343d"> and follow the steps to fork the repo to your account by creating a new fork. This creates your own personal version of this repository
+2. At the top of the page click on <img width="80" alt="fork" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/007c608d-9d06-4db9-bee0-eaae1cd0343d">
 
     <img width="582" alt="fork" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/80964a3a-e63b-4433-a070-0b69f7c4e747">
 
+3. Follow the steps to fork the repo to your account by creating a new fork. Click on <img width="80" alt="create fork" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/575eb007-7936-40eb-9bbd-2d26490876cf"> when you are finished. This creates your own personal version of this repository
+
+    <img width="582" alt="fork page" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/34ac40e0-c3e2-4717-9050-9fc804b8cf4a">
 
 <br>
 
@@ -139,6 +142,7 @@ GitHub is the free web based platform we and many other software engineers use t
     ```
 4. To confirm the clone was successful list your files with `ls`. You should see the name of the cloned repo in your current directory
 
+
 <br>
 
 
@@ -147,11 +151,13 @@ GitHub is the free web based platform we and many other software engineers use t
 ## 0️⃣ Sync and pull the changes
 I will be updating my upstream version of your repo before SI sessions to add new content. In order to get the new content into your forked repo you must sync and pull the changes. *Every time* you want to work on your repo I recommend heading to your forked repo and seeing if there are upstream changes to be synced and pulled
 1. Open your forked repo in GitHub. If there are no changes you should see a message that looks like the following stating this branch is up to date. If this is the case it means I have not made changes and you can ignore the following steps.
+    ![up_to_date](https://github.com/steph1111/F23_CS11_SI/assets/96219204/a67537ba-91e8-4ec6-907d-8181b769b281)
 
 2. If there are upstream changes to merge there should be a message on this page similar to the following:
-
+    ![x_commits_behind](https://github.com/steph1111/F23_CS11_SI/assets/96219204/786f9c39-25de-4fd2-8b2b-2012b332646d)
    This means I have main changes to the upstream repo that need to be synced to your fork
-3. Click on the button titled 🔄 `Sync fork`, you should see a window stating the code is out of date. Click the {}
+3. Click on the button titled 🔄 `Sync fork`, you should see a window stating the code is out of date. Click <img width="80" alt="update branch" src="https://github.com/steph1111/F23_CS11_SI/assets/96219204/3330cd21-db4f-4ed4-9803-36796deea681">
+
 4. Next navigate to your fork on your system 
 5. Enter the command `git pull` to pull the changes on GitHub onto your device
    ```sh
@@ -167,6 +173,7 @@ Once you make some changes you would like to be documented you need to `commit` 
      - `-m`: This is a flag that says we would like to add a commit message
      - `"Message here`: Between quotes state what changes you are committing 
      - `file_name`: Replace this with the file you wish to commit
+     
      All together the git commit command syntax looks like this:
      ```sh
      git commit -m "Message here" file_name
@@ -175,11 +182,12 @@ Once you make some changes you would like to be documented you need to `commit` 
      ```sh
      git commit -m "Added endl to move to the next line" hello.cpp
      ```
+2. You will recieve a short message sumarizing the changes
 
 <br>
 
 ## 2️⃣ Push your changes
-Once you have finished a coding session it is a good idea to `push` your commits. The `push` command is basically the opposite of `pull`. `push` takes the changes (commits) you made on your local system and sends them to GitHub. <span style="color:red"> **IMPORTANT always push before you pull!**</span> 
+Once you have finished a coding session it is a good idea to `push` your commits. The `push` command is basically the opposite of `pull`. `push` takes the changes (commits) you made on your local system and sends them to GitHub. <span style="color:red"> **IMPORTANT: always push before you pull!**</span> 
 1. Commit your changes (see above)
 2. Enter the command `git pull` to push the changes from your system to GitHub
 3. You can confirm this worked by heading to Github and seeing the changes reflected on your repo page
