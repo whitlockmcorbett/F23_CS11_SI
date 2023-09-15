@@ -95,10 +95,10 @@ GitHub is the free web based platform we and many other software engineers use t
     ```
 4. Set up your email using the following command where `<your_GitHub_email>` is the email you used when creating your GitHub account
     ```sh
-    git config --global user.name <your_GitHub_email>
+    git config --global user.email <your_GitHub_email>
     ```
      ```sh
-    git config --global user.name stlheure@cabrillo.edu
+    git config --global user.email stlheure@cabrillo.edu
     ```
 
 <br>
@@ -123,17 +123,13 @@ GitHub is the free web based platform we and many other software engineers use t
 <br>
 
 ## 3️⃣ Generate an SSH key
-
-1. Confirm you have an `.ssh` directory on your system by running the command
-   ```sh
-   ls ~/.ssh
-   ```
-   This should return a list of files
-2. Generate an SSH key to connect your system to your GitHub account
+1. Generate an SSH key to connect your system to your GitHub account
     ```sh
     ssh-keygen
     ```
-3. Copy the generated ssh key
+    - When it asks for the location to put the file hit enter 
+    - Also just hit enter when it asks for the password, unless you can remember it
+2. Copy the generated ssh key
     ```sh
     cat ~/.ssh/id_rsa.pub
     ```
