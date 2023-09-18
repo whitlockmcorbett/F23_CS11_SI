@@ -1,52 +1,33 @@
 # Instructions
-**Objective:** Test if an integer falls in between two other integers.
+**Objective:** Explore the differences between `if`, `if`, `if`... and `if`, `else if`, `else if`, `else if`, ... , `else` statements
 
 ## Background information 
-If statements are great for a single "branch" of a control flow tree, but sometimes we want to deal with cases where each branch splits off into more branches.
 
-In this program, you'll be trying to see if a target number (`target`) falls between two other numbers (`bound1` and `bound2`). The bounds are not given in any particular order, that is, `bound1` can be *either* less than (<), greater than (>), or equal to (=) `bound2`.
+  ![Graphics](https://i.imgur.com/T8ENf6I.png)
 
-We are also considering that a target number equaling one of the bounds does not lie in that range. For example, we would say that 10 is not in between 1 and 10.
+### Repeated if statements: Grocery list
+- Think of a series of repeated `if` statements like a **grocery list**
+- When you go to the store you look at the first item on your list. `if` it is in stock, you will buy it
+- Then you go to the next item on your list, `if` they have that in stock, you will buy that as well
+- For as many items as there are on your list, you will continue to check `if` they have the item, then if so you will buy it. Otherwise (else), if it is not in stock, you will move to the next item and check if they have it and repeat till the end of the list
 
-## Hints
-1. Use a whiteboard to draw out the flow of the program. What decisions do we need to make to figure out if `target` lies in between the bounds?
-2. How can we use if statements with comparison operators to determine if `bound1` is greater than, less than, or equal to `bound2`?
-3. Once we know how `bound1` compares to `bound2`, how can we use comparison operators to determine if `target` lies between them?
+### if, else if, else if, else if, ... ,else: Ordering dinner at a restaurant 
+- Think of a series of `if`, `else if` `else if`, ... , `else` statements as **ordering from a restaurant** 
+- You probably have a favorite food you are hoping on eating, you will first check `if` they have this. If they do you will order, otherwise onto the next choice
+- Otherwise (`else`) `if` they do not have your first choice, you might have something else in mind. If you will ask if they have this, and if so will order, otherwise onto the next choice
+- Otherwise (`else`) `if` they do not have your second choice, you might have another option in mind. If you will ask if they have this, and if so will order
+- You may ask for a few other options but by this time you just want food. If all `else` fails, you ask what they actually have, then order that. This is your last resort
 
-
-## Test Cases
-```
-Test 1:
-Enter the first bound: 100
-Enter the second bound: 0
-Enter the target integer: 50
-50 falls between 100 and 0
-```
-```
-Test 2:
-Enter the first bound: 100
-Enter the second bound: 0
-Enter the target integer: 50
-50 falls between 100 and 0
-```
-```
-Test 3:
-Enter the first bound: 0
-Enter the second bound: 0
-Enter the target integer: 0
-0 does not fall between 0 and 0
-```
-```
-Test 4:
-Enter the first bound: 20
-Enter the second bound: 40
-Enter the target integer: -30
--30 does not fall between 20 and 40
-```
-```
-Test 5:
-Enter the first bound: -1000000
-Enter the second bound: 1000000
-Enter the target integer: 0
-0 falls between -1000000 and 1000000
-```
+## Instructions
+1. Use the provided random "grocery" booleans as conditionals for the `if` statements. Run the program and notice how it behaves. How many statement got executed?
+    ```cpp
+    // This is one of the random booleans, we will learn what 
+    // it means later, ignore for now
+    bool has_carrots = rand() % 2;
+    ```
+2. Use the provided random "dinner" booleans as conditionals for the `if` and `else if` statements. Run the program and notice how it behaves. How many statement got executed?
+    ```cpp
+    // This is one of the random booleans, we will learn what
+    // the statements following it mean later. Ignore them for now
+    bool has_pizza = false; 
+    ```

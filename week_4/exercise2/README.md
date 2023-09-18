@@ -7,6 +7,8 @@ If statements are great for a single "branch" of a control flow tree, but someti
 In this program, you'll be trying to see if a target number (`target`) falls between two other numbers (`bound1` and `bound2`). The bounds are not given in any particular order, that is, `bound1` can be *either* less than (<), greater than (>), or equal to (=) `bound2`.
 
 We are also considering that a target number equaling one of the bounds does not lie in that range. For example, we would say that 10 is not in between 1 and 10.
+$$target \in (bound1, bound2) \text{ such that } bound1 < bound2$$
+
 
 ## Hints
 1. Use a whiteboard to draw out the flow of the program. What decisions do we need to make to figure out if `target` lies in between the bounds?
