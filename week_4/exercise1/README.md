@@ -4,6 +4,8 @@
 ## Background information 
 If statements are the foundation of control flow in most programming languages. You should be able to break down complex decisions into some number of if statements. To practice this, we are going to be making a calculator which takes in two numbers (doubles) from standard in as well as an operator (used to indicate if the operation is multiplication, addition, etc.), then outputs the result of that operation.
 
+<img width="208" alt="calculator_graphic" src="https://i.imgur.com/URRg4nH.png">
+
 ## Hints
 1. Use a whiteboard to draw out the flow of the program. What are the possible calculations we want to do based on the variables provided. Which variables "tell us" which calculation we want to do?
 2. How can we use a comparison operator on one of our variables to figure out which calculation we should compute?
