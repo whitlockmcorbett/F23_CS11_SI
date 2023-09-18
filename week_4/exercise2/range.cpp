@@ -18,7 +18,7 @@ int main() {
 	bool in_bound; // set in_bound to true if the target is between numbers, false otherwise
 
         //-------------------- YOUR CODE BELOW -------------------------
-        //-------------------- YOUR CODE BELOW -------------------------
+        //-------------------- YOUR CODE ABOVE -------------------------
 	
 
 	if (in_bound) {
