@@ -10,4 +10,5 @@ int main () {
 	 * Here
 	 *
 	 */
+	return 0;
 }

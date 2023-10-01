@@ -1,4 +1,5 @@
 #include<iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main() {
 			at++;
 		}
 	}
-	cout << "Percentage of Gs and Cs: " << (double) gc / (gc+at) << endl;
+	cout << fixed << setprecision(0);
+	cout << "Percentage of Gs and Cs: " << (double) gc / (gc+at) * 100 << endl;
 	return 0;
 }
