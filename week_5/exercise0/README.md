@@ -9,7 +9,7 @@ The points at which the graph intersects the x-axis are called roots or zeros of
 
 ![Quadratic with x intercepts](https://i.imgur.com/f38Ph7l.png)
 The roots are found by setting the given equation equal to zero and solving using the quadratic formula.
-x=−b±√b2−4ac2ax = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 A quadratic may have 0, 1, or 2 roots depending on the nature of the equation.
 
 
