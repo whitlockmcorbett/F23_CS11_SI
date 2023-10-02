@@ -16,7 +16,7 @@ int main() {
   cin >> user_password;
   tries++;
 
-  while ((user_email != EMAIL || user_password != PASSWORD) && tries < MAX_TRIES) {
+  while ((user_email != EMAIL || user_password != PASSWORD) && tries <= MAX_TRIES) {
     cout << "Incorrect email or password" << endl << endl;
 
     cout << "Email: ";
