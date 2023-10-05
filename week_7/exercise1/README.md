@@ -1,5 +1,5 @@
 # Instructions
-**Objective:** 
+**Objective:** Determine the "playoff" points and total goals a team has
 
 ## Background information 
 Imagine a sports league. In this sports league, to qualify for the playoffs you must earn a certain number of points during the season. A team is awarded 3 points for winning a game, 1 point for tieing a game, and 0 points for losing a game. 
@@ -9,7 +9,7 @@ Write a program which when given a score (A:B, where home team scored A and away
 **Note**: all games will have scores in single digits
 
 ## Steps
-1. From the console, read in an arbitrary number of strings showing the scores. Ex: 4:6
+1. From the console, read in an _arbitrary number_ of strings showing the scores. Ex: 4:6
 2. Compute the number of playoff points Team A scored.
 3. Compute the number of total goals Team A scored.
 4. Output the previous two numbers
@@ -58,4 +58,4 @@ Total goals: 26
 ```
 
 ## Challenge
-Rewrite program to work with inputs of arbitrary digits
+Rewrite program to work with inputs of arbitrary digits, for example 10:3

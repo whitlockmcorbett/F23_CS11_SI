@@ -4,11 +4,10 @@
 ## Background information 
 When doing any kind of graphing in two dimensions, it is very helpful to draw out an x- and y-axis. These two axes intersect at a point on the graph called the origin. In between these axes, there are four seperated areas called quadrants.
 
-![The four quadrants](https://i.imgur.com/PDrwGZU.png)
+![The four quadrants](https://i.imgur.com/GlqvbqN.png)
 
 Write a program that takes in two integers and prints whether  it lies in the First, Second, Third, or Fourth Quadrant.
 
-BONUS: Also print out when the point lies on either an axis or on the origin.
 
 ## Steps
 1. Prompt user for x and y coordinates.
@@ -46,3 +45,6 @@ Test 6
 -4 -3
 Third Quadrant
 ```
+
+## Challenge 
+Also print out when the point lies on either an axis or on the origin.
