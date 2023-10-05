@@ -17,13 +17,18 @@ int main() {
 
 	bool in_bound; // set in_bound to true if the target is between numbers, false otherwise
 
-        //-------------------- YOUR CODE BELOW -------------------------
+        
+		//-------------------- YOUR CODE BELOW -------------------------
         //-------------------- YOUR CODE ABOVE -------------------------
 	
 
-	if (in_bound) {
+	if (in_bound > bound1 && in_bound < bound2) {
 		cout << target << " falls between " << bound1 << " and " << bound2 << endl;
-	} else {
+	} 
+	if (in_bound < bound1 && in_bound > bound2) {
+		cout << target << " falls between " << bound1 << " and " << bound2 << endl;
+	}
+	else {
 		cout << target << " does not fall between " << bound1 << " and " << bound2 << endl;
 	}
 	return 0;
