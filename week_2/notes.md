@@ -6,7 +6,7 @@
 # Week 1: 08.28.23
 
 ## Introduction 
-- Name: Andrew or Tac 
+- Name: Andrew or Tac (stupid guy)
 - From: Yosemite
 - Education: UCLA and UCSC
 - Did some projects with AI
