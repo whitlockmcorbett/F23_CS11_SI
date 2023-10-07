@@ -9,7 +9,7 @@ int main () {
   cin >> word_num;
 
   cout << "Enter a sentence: ";
-  for (int i = 0; cin >> word; i++) {
+  for (int i = 1; cin >> word; i++) {
     if (i == word_num) word_out = word;
   }
   cout << word_out << endl;
