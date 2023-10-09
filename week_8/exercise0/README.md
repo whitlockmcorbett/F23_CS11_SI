@@ -51,3 +51,15 @@ Test 2
 Enter a word: Taco cat!
 true
 ```
+
+```
+Test 3
+UFO tofu
+true
+```
+
+```
+Test 4
+Yo, Banana Boy! 
+true
+```
