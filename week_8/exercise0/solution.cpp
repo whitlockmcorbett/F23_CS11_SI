@@ -1,26 +1,18 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-	int x, y;
-	cin >> x >> y;
+  string str;
+  bool pal = true;
+  cout << "Enter a word: ";
+  cin >> str;
 
-	if (x > 0 && y > 0) {
-		cout << "First Quadrant" << endl;
-	} else if (x < 0 && y > 0) {
-		cout << "Second Quadrant" << endl;
-	} else if (x < 0 && y < 0) {
-		cout << "Third Quadrant" << endl;
-	} else if (x > 0 && y < 0) {
-		cout << "Fourth Quadrant" << endl;
-	} else if (x == 0 && y == 0) {
-		cout << "At Origin" << endl;
-	} else if (x == 0) {
-		cout << "On x-axis" << endl;
-	} else { 
-		cout << "On y-axis" << endl;
-	}
-
-	return 0;
+  for (int i = 0; pal && i < str.size() / 2; i++) {
+    if (str[i] != str[str.size() - i - 1]) {
+      pal = false;
+    }
+  }
+  cout << boolalpha << pal << endl;
+  
+  return 0;
 }

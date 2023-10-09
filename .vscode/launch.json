@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/stephanie/Documents/_SI_F23/F23_CS11_SI/week_5/exercise1",
-      "program": "/Users/stephanie/Documents/_SI_F23/F23_CS11_SI/week_5/exercise1/build/Debug/outDebug"
+      "cwd": "/Users/stephanie/Documents/_SI_F23/F23_CS11_SI/week_8/exercise0",
+      "program": "/Users/stephanie/Documents/_SI_F23/F23_CS11_SI/week_8/exercise0/build/Debug/outDebug"
     }
   ]
 }

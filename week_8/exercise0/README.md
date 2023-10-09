@@ -1,49 +1,65 @@
 # Instructions
-**Objective:** Write a program that determines which quadrant a point lies in. If it falls on an axis or the origin, print that instead.
+**Objective:** Write a program that determines if a word is a palindrome 
 
 ## Background information 
-When doing any kind of graphing in two dimensions, it is very helpful to draw out an x- and y-axis. These two axes intersect at a point on the graph called the origin. In between these axes, there are four seperated areas called quadrants.
+The word palindrome derives from greek and means "running back". The definition of a palindrome is something that reads the same forwards and backwards. This can be a word, sentence, or number. `civic` is a palindrome, if you reverse the order of the letters, the word is the same. `noon` is another example
 
-![The four quadrants](https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/cartesian-plane/example-2.gif)
 
-Write a program that takes in two integers and prints whether  it lies in the First, Second, Third, or Fourth Quadrant.
+Note that in this program we will be looking at single words, not sentences or numbers
 
 ## Steps
-1. Prompt user for x and y coordinates.
-2. Determine and print which quadrant.
+1. Prompt the user for a word
+2. Determine if it is a palindrome
+3. Output `true` if the word is a palindrome, and `false` otherwise
 
 ## Test Cases
 ```
 Test 1
-5 -6
-Fourth Quadrant
+Enter a word: hello
+false
 ```
 
 ```
 Test 2
--1 6
-Second Quadrant
+Enter a word: civic
+true
 ```
+
 ```
 Test 3
-9 -9
-Fourth Quadrant
+Enter a word: noon
+true
 ```
+
 ```
 Test 4
-10 6
-First Quadrant
-```
-```
-Test 5
-5 -8
-Fourth Quadrant
-```
-```
-Test 6
--4 -3
-Third Quadrant
+Enter a word: racecas
+false
 ```
 
 ## Challenge
-Modify your program so it prints out when the point lies on either an axis or on the origin.
+Traditionally, when looking at palindromes, we will ignore spaces, capitalization, and punctuation. This means we could check if sentences are palindromes. For example, `Taco cat!` is a palindrome if you remove the spaces, capitalization, and punctuation. Doing this would result in `tacocat` which is a palindrome. Modify the program so that it works for cases like this. To make things simpler, assume valid inputs will only contain letters, spaces, and punctuation
+
+```
+Test 1
+Enter a word: hello world
+false
+```
+
+```
+Test 2
+Enter a word: Taco cat!
+true
+```
+
+```
+Test 3
+UFO tofu
+true
+```
+
+```
+Test 4
+Yo, Banana Boy! 
+true
+```
