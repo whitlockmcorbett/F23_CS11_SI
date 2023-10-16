@@ -1,26 +1,21 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main() {
-  int a = 0, b = 8, n = 1000;
-  double delta_x = (b - a) / (double)n;
-  double result, x;
+  int m, n;
+  
+  cout << "Enter a number m: ";
+  cin >> m;
+  cout << "Enter a number n: ";
+  cin >> n;
 
-  result = (sin(M_PI * a) + 2) + (sin(M_PI * b) + 2);
-
-  for (int i = 1; i < n; i++) {
-    x = a + i * delta_x;
-    if (i % 2 == 0) { // Subscript is even 
-      result += 2 * (sin(M_PI * x) + 2);
-    } else { // Subscript is odd
-      result += 4 * (sin(M_PI * x) + 2);
-    }
+  int temp = 0;
+  while (n != 0) {
+    temp = m % n;
+    m = n;
+    n = temp;
   }
-  result *= delta_x / 3.0;
 
-  cout << "The area below the function sin(πx)+2 between x = " << a << " and " 
-       << "x = " << b << " with " << n << " subdivisions is " << result << endl;
-
+  cout << "GCD is " << m << endl;
   return 0;
 }

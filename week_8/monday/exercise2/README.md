@@ -1,37 +1,36 @@
 # Instructions
-**Objective:** Write a program that finds the greatest common devisor (GCD) of two integers
+**Objective:** Write a program that computes an estimate for the area under a curve (the definite integral of a function)
 
 ## Background information 
-The greatest common divisor of two numbers is the largest number that divides evenly into both. The Euclidean Algorithm is a technique for finding the GCD of two numbers.
+The integral of a function gives the net area under a curve within an interval. The following denotes the integral (area under the curve) of function $f(x)$ between $x = a$ and $x = b$.
+$$\int^{b}_a f(x) dx$$
+In MATH-5B you will learn how to exactly compute definite integrals of functions, but in this exercise we will look approximating areas with Simpson's Rule. Simpson's Rule is a method of approximating definite integrals by connecting known points with parabolic curves. You may look into the derivation of the rule, but for our purposes we will just refer to the following formula:
+$$\int^{b}_a f(x) dx \approx \frac{\Delta x}{3}(f(x_0) + 4f(x_1) + 2(x_2) + 4f(x_3) + 2f(x_4) + ... + 2f(x_{n-2}) + 4 f(x_{n-1}) + f(x))$$
+$$\Delta x = \frac{b - a}{n}$$
+$$x_i = a + i\Delta x$$
+The number of subdivisions, $n$, must be an even number. The more subdivisions, the better the approximation will be
+### Example
+Compute the area under the function $\sqrt{\ln(x)}$ between $x = 1$ and $x = 4$ with 6 subdivisions
+$$\Delta x = \frac{b - a}{n} = \frac{4 - 1}{6} = \frac{1}{2}$$
+$$x_i = a + i\Delta x = \{1, 1.5, 2, 2.5, 3, 3.5, 4\}$$
+$$\int^{4}_{1}\sqrt{\ln(x)} \approx \frac{1}{3 \cdot 2} \left(\sqrt{\ln{1}} + 4\sqrt{\ln{1.5}} + 2\sqrt{\ln{2}} + 4\sqrt{\ln{2.5}} + 2\sqrt{\ln{3}} + 4\sqrt{\ln{3.5}} + \sqrt{\ln{4}}\right)$$
+$$\int^{4}_{1}\sqrt{\ln(x)} \approx  2.631976$$
 
-Euclid'a algorithm for GCD works on this relation:
-
-$$GCD(m,n) = GCD(n, m \% n)$$
+<div align="center"><img src="https://i.imgur.com/hEx6XpE.png" alt="\sqrt{\ln{x}}" width="400"></div>
 
 
 ## Steps
-1. Ask the user to enter two positive integers
-2. Output the greatest common divisor of both numbers
+1. Use Simpson's Rule to calculate the area below the function $\sin(\pi x) + 2$ between $x = 0$ and $x = 8$ with 1000 subdivisions 
+2. Output the area to 5 decimal points
+### Hints
+- Use `M_PI` from `cmath` for $\pi$
+- Note the pattern that coefficient of 4 always corresponds to an odd subscript. The coefficient of 2 always corresponds to an even subscript
+- The first and last value do not have coefficients
+<div align="center"><img src="https://i.imgur.com/zwQp0fN.png" alt="\sqrt{\ln{x}}" width="400"></div>
 
 
 ## Test Cases
 ```
 Test 1
-Enter a number a: 24
-Enter a number b: 12
-The GCD of 24 and 12 is 12
-```
-
-```
-Test 2
-Enter a number a: 770 
-Enter a number b: 900
-The GCD of 770 and 900 is 10
-```
-
-```
-Test 3
-Enter a number a: 288
-Enter a number b: 160
-The GCD of 288 and 160 is 32
+The area below the function sin(πx)+2 between x = 0 and x = 8 with 1000 subdivisions is 16
 ```
