@@ -8,7 +8,6 @@ int main() {
   double result, x;
 
   result = (sin(M_PI * a) + 2) + (sin(M_PI * b) + 2);
-  cout << M_PI << endl;
 
   for (int i = 1; i < n; i++) {
     x = a + i * delta_x;
