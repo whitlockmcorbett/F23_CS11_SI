@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 #include <cmath>
 using namespace std;
 
@@ -12,7 +11,6 @@ int main() {
   // ---------------------- YOUR CODE HERE ----------------------
   // ------------------------------------------------------------
   
-  cout << fixed << setprecision(5); 
   cout << "The area below the function sin(πx)+2 between x = " << a << " and " 
        << "x = " << b << " with " << n << " subdivisions is " << result << endl;
 
