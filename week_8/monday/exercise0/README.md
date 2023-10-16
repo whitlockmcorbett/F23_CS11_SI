@@ -2,7 +2,7 @@
 **Objective:** Write a program that computes an estimate for the area under a curve (the definite integral of a function)
 
 ## Background information 
-The integral of a function gives the net area under a curve within an interval. The following denotes the integral (area under the curve) of function $f(x)$ between $x = a$ and $x = b.
+The integral of a function gives the net area under a curve within an interval. The following denotes the integral (area under the curve) of function $f(x)$ between $x = a$ and $x = b$.
 $$\int^{b}_a f(x) dx$$
 In MATH-5B you will learn how to exactly compute definite integrals of functions, but in this exercise we will look approximating areas with Simpson's Rule. Simpson's Rule is a method of approximating definite integrals by connecting known points with parabolic curves. You may look into the derivation of the rule, but for our purposes we will just refer to the following formula:
 $$\int^{b}_a f(x) dx \approx \frac{\Delta x}{3}(f(x_0) + 4f(x_1) + 2(x_2) + 4f(x_3) + 2f(x_4) + ... + 2f(x_{n-2}) + 4 f(x_{n-1}) + f(x))$$
@@ -32,5 +32,5 @@ $$\int^{4}_{1}\sqrt{\ln(x)} \approx  2.631976$$
 ## Test Cases
 ```
 Test 1
-
+The area below the function sin(πx)+2 between x = 0 and x = 8 with 1000 subdivisions is 16
 ```
