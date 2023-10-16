@@ -2,7 +2,12 @@
 **Objective:** Write a program that finds the greatest common devisor (GCD) of two integers
 
 ## Background information 
-The greatest common divisor of two numbers is the largest number that divides evenly into both. The Euclidean Algorithm is a technique for finding the GCD of two numbers. LIAM PLEASE WRITE STUFF HERE
+The greatest common divisor of two numbers is the largest number that divides evenly into both. The Euclidean Algorithm is a technique for finding the GCD of two numbers.
+
+Euclid'a algorithm for GCD works on this relation:
+
+$$GCD(m,n) = GCD(n, m % n)$$
+
 
 ## Steps
 1. Ask the user to enter two positive integers
