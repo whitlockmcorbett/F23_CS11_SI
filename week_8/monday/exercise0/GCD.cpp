@@ -2,22 +2,17 @@
 using namespace std;
 
 int main() {
-  int a, b, r;
+  int m, n;
   
-  cout << "Enter a number a: ";
-  cin >> a;
-  cout << "Enter a number b: ";
-  cin >> b;
+  cout << "Enter a number m: ";
+  cin >> m;
+  cout << "Enter a number n: ";
+  cin >> n;
 
-  int A = a, B = b;
+  // ------------------------------------------------------------
+  // ---------------------- YOUR CODE HERE ----------------------
+  // ------------------------------------------------------------
 
-  while(a % b > 0) {
-    r = a % b;
-    a = b;
-    b = r;
-  }
-
-  cout << "The GCD of " << A << " and " << B << " is " << b << endl;
-
+  // cout << "GCD is " << m << endl;
   return 0;
 }
