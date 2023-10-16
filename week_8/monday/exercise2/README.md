@@ -6,7 +6,7 @@ The greatest common divisor of two numbers is the largest number that divides ev
 
 Euclid'a algorithm for GCD works on this relation:
 
-$$GCD(m,n) = GCD(n, m % n)$$
+$$GCD(m,n) = GCD(n, m \% n)$$
 
 
 ## Steps
