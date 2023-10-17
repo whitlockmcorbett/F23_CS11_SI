@@ -14,17 +14,17 @@ A prime number is defined to be a number greater than 1 who's only factors are 1
 ```
 Test 1
 Enter an integer n: 20
-3 5 7 11 13 17 19 
+2 3 5 7 11 13 17 19 
 ```
 
 ```
 Test 2
 Enter an integer n: 35
-3 5 7 11 13 17 19 23 29 31 
+2 3 5 7 11 13 17 19 23 29 31 
 ```
 
 ```
 Test 3
 Enter an integer n: 100
-3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
 ```
