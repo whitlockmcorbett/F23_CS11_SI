@@ -1,5 +1,5 @@
 # Instructions
-**Objective:** Write a program that given a sentence and a number, outputs the word at that location
+**Objective:** Write a program that reads in an entire line using `getline()`, then inpputs a number equal to a word in the entered line. Your program will output the word at that location.
 
 ## Background information 
 We will define the first word in a sentence as word number `1`, then `2`, `3`, etc. Words will always be separated by spaces

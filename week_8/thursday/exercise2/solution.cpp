@@ -12,7 +12,7 @@ int main() {
 
 	for (int i = 0; count_ws != word_num && i < sentence.size(); i++) {
 		// If at a space or the end
-		if (sentence[i] == 32 || i == sentence.size() - 1) {
+		if (sentence[i] == ' ' || i == sentence.size() - 1) {
 			count_ws++;
 			// Update the whitespace trackers
 			// The previous becomes the next, next becomes the current index
