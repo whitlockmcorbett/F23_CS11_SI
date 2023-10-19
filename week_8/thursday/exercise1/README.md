@@ -1,19 +1,65 @@
 # Instructions
-**Objective:** Write a program that given a sentence and a number, outputs the word at that location
+**Objective:** Write a program that determines if a word is a palindrome 
 
 ## Background information 
-We will define the first word in a sentence as word number `1`, then `2`, `3`, etc. Words will always be separated by spaces
-For example in the sentence `Hello world this is a sentence`,  `Hello` is word `1`, `world` is word `2` and so on
+The word palindrome derives from greek and means "running back". The definition of a palindrome is something that reads the same forwards and backwards. This can be a word, sentence, or number. `civic` is a palindrome, if you reverse the order of the letters, the word is the same. `noon` is another example
+
+
+Note that in this program we will be looking at single words, not sentences or numbers
 
 ## Steps
-1. From the console, read in a sentence (with spaces)
-2. Ask the user to enter a word number
-3. Output the word at that number
+1. Prompt the user for a word
+2. Determine if it is a palindrome
+3. Output `true` if the word is a palindrome, and `false` otherwise
 
 ## Test Cases
 ```
 Test 1
-Enter a sentence: Hello world this is a sentence
-Choose a word number: 1
-Hello 
+Enter a word: hello
+false
+```
+
+```
+Test 2
+Enter a word: civic
+true
+```
+
+```
+Test 3
+Enter a word: noon
+true
+```
+
+```
+Test 4
+Enter a word: racecas
+false
+```
+
+## Challenge
+Traditionally, when looking at palindromes, we will ignore spaces, capitalization, and punctuation. This means we could check if sentences are palindromes. For example, `Taco cat!` is a palindrome if you remove the spaces, capitalization, and punctuation. Doing this would result in `tacocat` which is a palindrome. Modify the program so that it works for cases like this. To make things simpler, assume valid inputs will only contain letters, spaces, and punctuation
+
+```
+Test 1
+Enter a word: hello world
+false
+```
+
+```
+Test 2
+Enter a word: Taco cat!
+true
+```
+
+```
+Test 3
+UFO tofu
+true
+```
+
+```
+Test 4
+Yo, Banana Boy! 
+true
 ```

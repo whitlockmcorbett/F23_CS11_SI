@@ -1,65 +1,47 @@
 # Instructions
-**Objective:** Write a program that determines if a word is a palindrome 
+**Objective:** Write a program to calculate how long ago a father was twice the age of his son.
 
 ## Background information 
-The word palindrome derives from greek and means "running back". The definition of a palindrome is something that reads the same forwards and backwards. This can be a word, sentence, or number. `civic` is a palindrome, if you reverse the order of the letters, the word is the same. `noon` is another example
+Every person who is older than you was at one point twice your age. Take a moment to think why this is.
 
-
-Note that in this program we will be looking at single words, not sentences or numbers
+Your job is to implement a program that can compute how many years ago a father (of a given age) was twice as old as his son('s given age).
 
 ## Steps
-1. Prompt the user for a word
-2. Determine if it is a palindrome
-3. Output `true` if the word is a palindrome, and `false` otherwise
+1. From the console, read in two integers, representing the father and son's age.
+2. Calculate how many years ago the father was twice as old as the son.
+3. Print out the number of years.
 
 ## Test Cases
 ```
 Test 1
-Enter a word: hello
-false
+88
+49
+10 years ago.
 ```
-
 ```
 Test 2
-Enter a word: civic
-true
+47
+26
+5 years ago.
 ```
-
 ```
 Test 3
-Enter a word: noon
-true
+70
+37
+4 years ago.
 ```
-
 ```
 Test 4
-Enter a word: racecas
-false
+49
+28
+7 years ago.
+```
+```
+Test 5
+90
+50
+10 years ago.
 ```
 
 ## Challenge
-Traditionally, when looking at palindromes, we will ignore spaces, capitalization, and punctuation. This means we could check if sentences are palindromes. For example, `Taco cat!` is a palindrome if you remove the spaces, capitalization, and punctuation. Doing this would result in `tacocat` which is a palindrome. Modify the program so that it works for cases like this. To make things simpler, assume valid inputs will only contain letters, spaces, and punctuation
-
-```
-Test 1
-Enter a word: hello world
-false
-```
-
-```
-Test 2
-Enter a word: Taco cat!
-true
-```
-
-```
-Test 3
-UFO tofu
-true
-```
-
-```
-Test 4
-Yo, Banana Boy! 
-true
-```
+Modify your program so it works if the father is twice the age of his son or yet to be twice the age of his son.
