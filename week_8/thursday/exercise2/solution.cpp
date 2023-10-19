@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	string sentence;
-	int word_num, start_index, end_index, prev_ws = 0, next_ws = 0, count_ws = 0;
+	int word_num, prev_ws = 0, next_ws = 0, count_ws = 0;
 
 	cout << "Enter a sentence: ";
 	getline(cin, sentence);
