@@ -4,11 +4,7 @@ using namespace std;
 int prefix(string word1, string word2) {
     int count;
     int length = word1 < word2 ? word1.length() : word2.length();
-    for (count = 0; count < length; count++) {
-        if (word1[count] != word2[count]) {
-            break;
-        }
-    }
+    for (count = 0; count < length && word1[count] == word2[count]; count++)
     return count;
 }
 int main() {
