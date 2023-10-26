@@ -40,15 +40,6 @@
     </ul>
 </details>
 
-<br>
-
-# Weekly directories
-Quick links to each weekly directory:
-- [Week 2](https://github.com/steph1111/F23_CS11_SI/tree/main/week_2)
-- [Week 3](https://github.com/steph1111/F23_CS11_SI/tree/main/week_3)
-  
-Each week we will have a new directory of practice programs
-
 <br> 
 
 # Getting started
